@@ -13,7 +13,7 @@ export default function BrandInfo() {
       <div className="continer continerBrandInfo">
         <div className="boxBrandInfo">
           <div id="about" className="ImageBrandInfo">
-            <img src="../../../public/fruits-splash.png"></img>
+            <img src="/fruits-splash.png"></img>
           </div>
           <div className="TextBrandInfo">
             <h2 data-aos="fade-left">Brand Info</h2>

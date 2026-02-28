@@ -33,7 +33,7 @@ export default function OnlineFruitStore() {
           </div>
         </div>
         <div data-aos="fade-up" className="img-online">
-          <img src="../../../public/fruit-plate.png"></img>
+          <img src="/fruit-plate.png"></img>
         </div>
       </div>
     </div>
