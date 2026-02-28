@@ -1,0 +1,202 @@
+.Box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.continer {
+  /* background: red; */
+  width: 85%;
+  height: 100px;
+}
+
+.NavBar {
+  width: 100%;
+  height: 100%;
+  /* background: black; */
+  display: flex;
+  position: relative;
+}
+
+.logo {
+  width: 40%;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+}
+
+.logo h2:nth-child(1) {
+  color: var(--color-pink);
+}
+.logo h2 span {
+  color: var(--color-orang);
+}
+
+.tags {
+  width: 60%;
+  /* background: green; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tags ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.tags ul li {
+  margin: 0 20px 0 20px;
+  padding: 5px;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  color: var(--color-light);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.tags ul a {
+  text-decoration: none;
+}
+.tags ul li:hover {
+  color: var(--color-pink);
+  border-bottom: 2px solid var(--color-pink);
+  cursor: pointer;
+}
+
+.tags ul span {
+  font-size: 20px;
+  color: var(--color-light);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: transparent;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.tags ul span:hover {
+  background: var(--color-pink);
+  color: white;
+}
+
+
+
+@media (min-width: 1024px) {
+  .tags .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .tags ul {
+    display: none;
+  }
+  .tags .icon {
+    display: block;
+    /* z-index: 10; */
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .tags {
+    justify-content: end;
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* نصف شفافة */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* الصندوق في المنتصف */
+.tagsTow {
+  background: white;
+  padding: 20px;
+  width: 25%;
+  height: 25%;
+  border-radius: 8px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.tagsTow ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.tagsTow ul li {
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  color: var(--color-light);
+}
+
+.tagsTow ul li:hover {
+  background: var(--color-pink);
+  color: white;
+}
+
+.tagsTow ul span{
+  font-size: 22px;
+  color: var(--color-light);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: var(--color-pink);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.tagsTow ul span:hover{
+  background: var(--color-orang2);
+  color: black;
+}
+
+.tagsTow ul li a {
+  text-decoration: none;
+  color: rgb(113, 114, 116);
+}

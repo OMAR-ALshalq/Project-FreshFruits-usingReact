@@ -1,0 +1,44 @@
+.BoxFooter {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.BoxFooter .Text h3 {
+  font-size: 25px;
+}
+
+.BoxFooter .Text h3 span {
+  font-size: 20px;
+  color: var(--color-pink2);
+}
+
+.BoxFooter .IconSochil {
+  font-size: 30px;
+  display: flex;
+  gap: 20px;
+  color: rgb(102, 100, 100);
+}
+
+.Box2 {
+  background: rgb(231, 221, 231);
+  display: flex;
+  justify-content: center;
+}
+
+.IconSochil a {
+  color: rgb(102, 100, 100);
+}
+
+@media (max-width:600px) {
+  .Box2 {
+    height: 160px;
+  }
+  .BoxFooter {
+    height: 160px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

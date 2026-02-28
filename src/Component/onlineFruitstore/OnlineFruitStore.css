@@ -1,0 +1,74 @@
+.contineronlinefruitstore {
+  margin-top: 100px;
+  display: flex;
+  gap: 200px;
+}
+
+.TextOnlineFruitStore h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+.TextOnlineFruitStore h2:nth-child(2) {
+  padding: 0 0 10px 0;
+}
+
+.TextOnlineFruitStore p {
+  color: rgb(83, 82, 82);
+  padding: 10px 0 10px 0;
+  line-height: 1.5;
+}
+
+.btn-online {
+  padding: 10px 30px;
+  font-size: 15px;
+  border: none !important;
+  background: var(--color-pink);
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.img-online img {
+  width: 500px;
+  height: 500px;
+}
+
+.btn-online:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .contineronlinefruitstore {
+    flex-direction: column;
+  }
+  .TextOnlineFruitStore {
+    text-align: center;
+  }
+  .img-online img {
+    width: 300px;
+    height: 300px;
+  }
+  .img-online {
+    text-align: center;
+    margin-top: -180px;
+  }
+  .img-online img {
+    width: 200px;
+    height: 200px;
+  }
+}
